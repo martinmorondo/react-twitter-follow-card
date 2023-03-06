@@ -5,26 +5,26 @@ const users = [
   {
     userName: 'martinMorondo',
     name: 'Martín Morondo',
-    isFollowing: 'true',
+    isFollowing: true,
   },
   {
     userName: 'lionelMessi',
     name: 'Lionel Messi',
-    isFollowing: 'false',
+    isFollowing: false,
   },
   {
-    userName: 'davidBeckam',
-    name: 'David Beckam',
-    isFollowing: 'true',
+    userName: 'Rihanna',
+    name: 'Rihanna',
+    isFollowing: true,
   },
   {
-    userName: 'Neymar',
-    name: 'Neymar',
-    isFollowing: 'false',
+    userName: 'Shakira',
+    name: 'Shakira',
+    isFollowing: false,
   }
 ];
 
-export function App() {
+export default function App() {
 
   return (
     <section className='App'>
