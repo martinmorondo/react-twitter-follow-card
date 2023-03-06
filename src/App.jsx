@@ -28,6 +28,7 @@ export default function App() {
 
   return (
     <section className='App'>
+      <h1>Twitter Follow Cards</h1>
       {
         users.map(({ userName, name, isFollowing}) => (
           <TwitterFollowCard
