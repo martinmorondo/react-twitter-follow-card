@@ -16,7 +16,11 @@ h1 {
   color: #fff;
   font-size: .8rem;
   justify-content: space-between;
-  margin: 1rem;
+  /* margin: 1rem; */
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 4px; 
+  width: 600px;
 }
 
 .tw-followCard-header {
@@ -28,6 +32,8 @@ h1 {
 .tw-followCard-info {
   display: flex;
   flex-direction: column;
+  color: #fff;
+  font-size: 14px;
 }
 
 .tw-followCard-infoUserName {
@@ -86,3 +92,31 @@ h1 {
 .tw-followCard-stopFollow {
   display: none;
 }
+
+@keyframes followAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.is-following {
+  animation: followAnimation 0.5s;
+}
+
+.customization-controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 20px;
+
+}
+
